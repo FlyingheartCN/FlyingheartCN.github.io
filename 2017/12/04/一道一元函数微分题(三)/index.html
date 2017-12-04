@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://flyingheartcn.github.io">
-  <title>一道一元函数微分题(二) | 飞翔的心</title>
+  <title>一道一元函数微分题(三) | 飞翔的心</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目：设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime\prime}[f^{-1}(x)]\)都存在，且\(f^{-1}[f^{-1}(x)]\neq 0\)证明\(\frac{d^{2}f^{-1}(x)}{dx^{2}}=-\fra">
+  <meta name="description" content="题目：求\(y=\frac{1}{2}\textrm{arctan}\sqrt[4]{1+x^4}+\textrm{ln}\sqrt[4]{\frac{\sqrt[4]{1+x^4}+1}{\sqrt[4]{1+x^4}-1}}\)的导数 解答：先求\(y^{\prime}_{x}\)，令\(u=\sqrt[4]{1+">
 <meta name="keywords" content="数学">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一道一元函数微分题(二)">
-<meta property="og:url" content="https://flyingheartcn.github.io/2017/12/03/一道一元函数微分题(二)/index.html">
+<meta property="og:title" content="一道一元函数微分题(三)">
+<meta property="og:url" content="https://flyingheartcn.github.io/2017/12/04/一道一元函数微分题(三)/index.html">
 <meta property="og:site_name" content="飞翔的心">
-<meta property="og:description" content="题目：设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime\prime}[f^{-1}(x)]\)都存在，且\(f^{-1}[f^{-1}(x)]\neq 0\)证明\(\frac{d^{2}f^{-1}(x)}{dx^{2}}=-\frac{f^{\prime\prime}[f^{-1}(x)]}{\left \{">
-<meta property="og:updated_time" content="2017-12-04T13:01:21.910Z">
+<meta property="og:description" content="题目：求\(y=\frac{1}{2}\textrm{arctan}\sqrt[4]{1+x^4}+\textrm{ln}\sqrt[4]{\frac{\sqrt[4]{1+x^4}+1}{\sqrt[4]{1+x^4}-1}}\)的导数 解答：先求\(y^{\prime}_{x}\)，令\(u=\sqrt[4]{1+x^4}\)，所以\(y=\frac{1}{2}\textrm{arctan}u">
+<meta property="og:updated_time" content="2017-12-04T13:19:49.701Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一道一元函数微分题(二)">
-<meta name="twitter:description" content="题目：设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime\prime}[f^{-1}(x)]\)都存在，且\(f^{-1}[f^{-1}(x)]\neq 0\)证明\(\frac{d^{2}f^{-1}(x)}{dx^{2}}=-\frac{f^{\prime\prime}[f^{-1}(x)]}{\left \{">
+<meta name="twitter:title" content="一道一元函数微分题(三)">
+<meta name="twitter:description" content="题目：求\(y=\frac{1}{2}\textrm{arctan}\sqrt[4]{1+x^4}+\textrm{ln}\sqrt[4]{\frac{\sqrt[4]{1+x^4}+1}{\sqrt[4]{1+x^4}-1}}\)的导数 解答：先求\(y^{\prime}_{x}\)，令\(u=\sqrt[4]{1+x^4}\)，所以\(y=\frac{1}{2}\textrm{arctan}u">
   
     <link rel="alternative" href="/atom.xml" title="飞翔的心" type="application/atom+xml">
   
@@ -156,28 +156,28 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-一道一元函数微分题(二)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-一道一元函数微分题(三)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      一道一元函数微分题(二)
+      一道一元函数微分题(三)
     </h1>
   
 
         
-        <a href="/2017/12/03/一道一元函数微分题(二)/" class="archive-article-date">
-  	<time datetime="2017-12-03T06:52:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-03</time>
+        <a href="/2017/12/04/一道一元函数微分题(三)/" class="archive-article-date">
+  	<time datetime="2017-12-04T13:00:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-04</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h4><p>设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime\prime}[f^{-1}(x)]\)都存在，且\(f^{-1}[f^{-1}(x)]\neq 0\)<br>证明\(\frac{d^{2}f^{-1}(x)}{dx^{2}}=-\frac{f^{\prime\prime}[f^{-1}(x)]}{\left \{ f^{\prime}[f^{-1(x)}] \right \}^{3}}\)</p>
-<h4 id="解答："><a href="#解答：" class="headerlink" title="解答："></a>解答：</h4><p>【证】设\(x=f(y)\)，则其反函数位\(y=f^{-1}(x)\)，对\(x=f(y)\)两边关于\(x\)求导，得\(1=f^{\prime}(y)\frac{dy}{dx}\)，变形得\(\frac{dy}{dx}=\frac{1}{f^{\prime}(y)}\)，再对两边求导，得\(\frac{d^{2}y}{dx^{2}}=-\frac{f^{\prime\prime}}{[f^{\prime}(y)]^2}\times \frac{dy}{dx}=-\frac{f^{\prime\prime}(y)}{[f^{\prime}(y)]^{3}}\)<br>将\(y=f^{-1}(x)\)替换入，证毕</p>
+        <h4 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h4><p>求\(y=\frac{1}{2}\textrm{arctan}\sqrt[4]{1+x^4}+\textrm{ln}\sqrt[4]{\frac{\sqrt[4]{1+x^4}+1}{\sqrt[4]{1+x^4}-1}}\)的导数</p>
+<h4 id="解答："><a href="#解答：" class="headerlink" title="解答："></a>解答：</h4><p>先求\(y^{\prime}_{x}\)，令\(u=\sqrt[4]{1+x^4}\)，所以\(y=\frac{1}{2}\textrm{arctan}u+\textrm{ln}\sqrt[4]{\frac{u+1}{u-1}}\)，<br>\(y^{\prime}_{x}=\left [ \frac{1}{2}\cdot \frac{1}{1+u^2}+\frac{1}{4}\left ( \frac{1}{u+1}-\frac{1}{u-1} \right ) \right ]u^{\prime}_{x}\)<br>\(=\frac{1}{2}(\frac{1}{u^{2}+1}-\frac{1}{u^{2}-1})\cdot \frac{1}{4} (1+x^{4})^{-\frac{3}{4}}\cdot 4x^{3}\)<br>\(=-\frac{x^{3}(1+x^{4})^{-\frac{3}{4}}}{1+x^{4}-1}\)<br>\(=-\frac{1}{x\sqrt[4]{(1+x^{4})^{3}}}\)<br>所以，\(x^{\prime}_{y}=\frac{1}{y^{\prime}_{x}}=x\sqrt[4]{(1+x^{4})^{3}}\)</p>
 
       
 
@@ -247,7 +247,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://flyingheartcn.github.io/2017/12/03/一道一元函数微分题(二)/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://flyingheartcn.github.io/2017/12/04/一道一元函数微分题(三)/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -261,18 +261,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/04/玉屏风口服液中黄芪甲苷的定性、定量分析实验/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          玉屏风口服液中黄芪甲苷的定性、定量分析实验
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/02/一道一元函数微分题/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">一道一元函数微分题</div>
+    <a href="/2017/12/04/玉屏风口服液中黄芪甲苷的定性、定量分析实验/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">玉屏风口服液中黄芪甲苷的定性、定量分析实验</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -311,7 +302,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "https://flyingheartcn.github.io/2017/12/03/一道一元函数微分题(二)/",
+  id: "https://flyingheartcn.github.io/2017/12/04/一道一元函数微分题(三)/",
   owner: 'FlyingheartCN',
   repo: 'FlyingheartCN.github.io',
   oauth: {
