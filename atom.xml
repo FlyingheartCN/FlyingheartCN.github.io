@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>飞翔的心</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://flyingheartcn.github.io/"/>
+  <updated>2017-12-04T13:54:21.499Z</updated>
+  <id>https://flyingheartcn.github.io/</id>
+  
+  <author>
+    <name>飞翔的心的博客</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>剁手物品</title>
+    <link href="https://flyingheartcn.github.io/2017/12/04/%E5%89%81%E6%89%8B%E7%89%A9%E5%93%81/"/>
+    <id>https://flyingheartcn.github.io/2017/12/04/剁手物品/</id>
+    <published>2017-12-04T13:24:07.000Z</published>
+    <updated>2017-12-04T13:54:21.499Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="HTC-USB-C转3-5mm-耳机音源转接线"><a href="#HTC-USB-C转3-5mm-耳机音源转接线" class="headerlink" title="HTC USB-C转3.5mm 耳机音源转接线"></a>HTC USB-C转3.5mm 耳机音源转接线</h4><p><img src="/assets/htc.png" alt="HTC音源转接线"></p><p><a href="http://eshop.htc.com/mall/zh-CN/htc/usb-c%E8%BD%AC35mm-%E8%80%B3%E6%9C%BA%E9%9F%B3%E6%BA%90%E8%BD%AC%E6%8E%A5%E7%BA%BF-zht" target="_blank" rel="noopener">购买链接</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;HTC-USB-C转3-5mm-耳机音源转接线&quot;&gt;&lt;a href=&quot;#HTC-USB-C转3-5mm-耳机音源转接线&quot; class=&quot;headerlink&quot; title=&quot;HTC USB-C转3.5mm 耳机音源转接线&quot;&gt;&lt;/a&gt;HTC USB-C转3.5mm 耳
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://flyingheartcn.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="日常" scheme="https://flyingheartcn.github.io/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+      <category term="剁手" scheme="https://flyingheartcn.github.io/tags/%E5%89%81%E6%89%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一道一元函数微分题(三)</title>
+    <link href="https://flyingheartcn.github.io/2017/12/04/%E4%B8%80%E9%81%93%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E9%A2%98(%E4%B8%89)/"/>
+    <id>https://flyingheartcn.github.io/2017/12/04/一道一元函数微分题(三)/</id>
+    <published>2017-12-04T13:00:11.000Z</published>
+    <updated>2017-12-04T13:54:21.502Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h4><p>求\(y=\frac{1}{2}\textrm{arctan}\sqrt[4]{1+x^4}+\textrm{ln}\sqrt[4]{\frac{\sqrt[4]{1+x^4}+1}{\sqrt[4]{1+x^4}-1}}\)的导数</p><h4 id="解答："><a href="#解答：" class="headerlink" title="解答："></a>解答：</h4><p>先求\(y^{\prime}_{x}\)，令\(u=\sqrt[4]{1+x^4}\)，所以\(y=\frac{1}{2}\textrm{arctan}u+\textrm{ln}\sqrt[4]{\frac{u+1}{u-1}}\)，<br>\(y^{\prime}_{x}=\left [ \frac{1}{2}\cdot \frac{1}{1+u^2}+\frac{1}{4}\left ( \frac{1}{u+1}-\frac{1}{u-1} \right ) \right ]u^{\prime}_{x}\)<br>\(=\frac{1}{2}(\frac{1}{u^{2}+1}-\frac{1}{u^{2}-1})\cdot \frac{1}{4} (1+x^{4})^{-\frac{3}{4}}\cdot 4x^{3}\)<br>\(=-\frac{x^{3}(1+x^{4})^{-\frac{3}{4}}}{1+x^{4}-1}\)<br>\(=-\frac{1}{x\sqrt[4]{(1+x^{4})^{3}}}\)<br>所以，\(x^{\prime}_{y}=\frac{1}{y^{\prime}_{x}}=x\sqrt[4]{(1+x^{4})^{3}}\)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h4&gt;&lt;p&gt;求\(y=\frac{1}{2}\textrm{arctan}\sqrt[4]{1+x^4}+\textrm{ln}\sqrt[4]
+      
+    
+    </summary>
+    
+    
+      <category term="数学" scheme="https://flyingheartcn.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>玉屏风口服液中黄芪甲苷的定性、定量分析实验</title>
+    <link href="https://flyingheartcn.github.io/2017/12/04/%E7%8E%89%E5%B1%8F%E9%A3%8E%E5%8F%A3%E6%9C%8D%E6%B6%B2%E4%B8%AD%E9%BB%84%E8%8A%AA%E7%94%B2%E8%8B%B7%E7%9A%84%E5%AE%9A%E6%80%A7%E3%80%81%E5%AE%9A%E9%87%8F%E5%88%86%E6%9E%90%E5%AE%9E%E9%AA%8C/"/>
+    <id>https://flyingheartcn.github.io/2017/12/04/玉屏风口服液中黄芪甲苷的定性、定量分析实验/</id>
+    <published>2017-12-04T08:20:48.000Z</published>
+    <updated>2017-12-04T08:37:54.604Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="实验目的："><a href="#实验目的：" class="headerlink" title="实验目的："></a>实验目的：</h4><p>掌握HPLC和TLC在中药分析中的应用<br>掌握黄芪甲苷的定性定量分析方法</p><h4 id="实验原理："><a href="#实验原理：" class="headerlink" title="实验原理："></a>实验原理：</h4><p>玉屏风口服液源自《丹溪心法》记载的玉屏风散，由黄芪、防风、白术3味传统中药组成，功能益气固表，祛邪止汗。临床多用于表虚不固，自汗恶风，或体虚易感风邪者。本品中黄芪为君药，所含主要有效成分黄芪甲苷（Astragaloside)为质控主要指标。据此参照相关文献，采用薄层色谱法对本品中所含黄芪甲苷成分进行定性测定，采用HPLC法进行定量测定。</p><h4 id="实验条件："><a href="#实验条件：" class="headerlink" title="实验条件："></a>实验条件：</h4><p>105℃活化30min的硅胶G薄层板、十八烷基硅烷键合硅胶柱、岛津LC-10AD液相色谱仪、SPD-10AV紫外检测器、紫外灯。正丁醇、氨试液、黄芪甲苷标准品、甲醇、微孔滤膜（0.45μm）、显色剂（10%硫酸乙醇溶液）。<br>流动相：乙腈-水（35：65）；检测波长203nm；柱温30℃；流量1.0 ml/min；展开剂：氯仿-乙酸乙酯-甲醇-水（8：20：12：60）。</p><h4 id="实验步骤："><a href="#实验步骤：" class="headerlink" title="实验步骤："></a>实验步骤：</h4><p>1、对照品溶液的制备：精密量取10mg黄芪甲苷标准品，加甲醇溶解于10ml容量瓶中，定容，摇匀。含量1mg/ml。<br>2、供试品溶液的制备：精密量取供试品10ml，用水饱和的正丁醇振摇提取4次(每次20ml)，合并正丁醇液，用25%氨水洗涤3次（每次20ml），再用正丁醇饱和的水洗4次（每次40ml，洗至中性），旋蒸蒸干正丁醇液，残渣加甲醇溶解并定容至10ml，摇匀，用0.45μm的微孔滤膜滤过，弃去初滤液，取续滤液为供试品溶液。<br>3、TLC法定性测定：吸取少量对照品溶液和供试品溶液，点于同一块硅胶G薄层板上，用展开剂展开，取出后喷入显色剂，在105℃下烘干至斑点清晰。观察斑点并记录比移值。<br>4、HPLC法定量测定：取10μl对照品溶液和供试品溶液，在设定好的程序下进行HPLC分析，记录保留时间与峰面积。</p><h4 id="实验记录："><a href="#实验记录：" class="headerlink" title="实验记录："></a>实验记录：</h4><p>实验结果在下周二公布</p><table><thead><tr><th></th><th style="text-align:center">浓度</th><th style="text-align:center">比移值</th><th>保留时间</th><th style="text-align:center">峰面积</th></tr></thead><tbody><tr><td>标准品溶液</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td><td style="text-align:center"></td></tr><tr><td>供试品溶液</td><td style="text-align:center"></td><td style="text-align:center"></td><td></td></tr></tbody></table><p>玉屏风口服液的黄芪甲苷的浓度：</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;实验目的：&quot;&gt;&lt;a href=&quot;#实验目的：&quot; class=&quot;headerlink&quot; title=&quot;实验目的：&quot;&gt;&lt;/a&gt;实验目的：&lt;/h4&gt;&lt;p&gt;掌握HPLC和TLC在中药分析中的应用&lt;br&gt;掌握黄芪甲苷的定性定量分析方法&lt;/p&gt;
+&lt;h4 id=&quot;实验原理：&quot;&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="化学" scheme="https://flyingheartcn.github.io/tags/%E5%8C%96%E5%AD%A6/"/>
+    
+      <category term="中药" scheme="https://flyingheartcn.github.io/tags/%E4%B8%AD%E8%8D%AF/"/>
+    
+      <category term="分析化学" scheme="https://flyingheartcn.github.io/tags/%E5%88%86%E6%9E%90%E5%8C%96%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一道一元函数微分题(二)</title>
+    <link href="https://flyingheartcn.github.io/2017/12/03/%E4%B8%80%E9%81%93%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E9%A2%98(%E4%BA%8C)/"/>
+    <id>https://flyingheartcn.github.io/2017/12/03/一道一元函数微分题(二)/</id>
+    <published>2017-12-03T06:52:34.000Z</published>
+    <updated>2017-12-04T13:54:21.503Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h4><p>设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime\prime}[f^{-1}(x)]\)都存在，且\(f^{-1}[f^{-1}(x)]\neq 0\)<br>证明\(\frac{d^{2}f^{-1}(x)}{dx^{2}}=-\frac{f^{\prime\prime}[f^{-1}(x)]}{\left \{ f^{\prime}[f^{-1(x)}] \right \}^{3}}\)</p><h4 id="解答："><a href="#解答：" class="headerlink" title="解答："></a>解答：</h4><p>【证】设\(x=f(y)\)，则其反函数位\(y=f^{-1}(x)\)，对\(x=f(y)\)两边关于\(x\)求导，得\(1=f^{\prime}(y)\frac{dy}{dx}\)，变形得\(\frac{dy}{dx}=\frac{1}{f^{\prime}(y)}\)，再对两边求导，得\(\frac{d^{2}y}{dx^{2}}=-\frac{f^{\prime\prime}}{[f^{\prime}(y)]^2}\times \frac{dy}{dx}=-\frac{f^{\prime\prime}(y)}{[f^{\prime}(y)]^{3}}\)<br>将\(y=f^{-1}(x)\)替换入，证毕</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h4&gt;&lt;p&gt;设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime
+      
+    
+    </summary>
+    
+    
+      <category term="数学" scheme="https://flyingheartcn.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一道一元函数微分题</title>
+    <link href="https://flyingheartcn.github.io/2017/12/02/%E4%B8%80%E9%81%93%E4%B8%80%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E9%A2%98/"/>
+    <id>https://flyingheartcn.github.io/2017/12/02/一道一元函数微分题/</id>
+    <published>2017-12-02T13:51:02.000Z</published>
+    <updated>2017-12-04T13:54:21.502Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h4><p>\(\frac{d}{dx}(\int_{x^{2}}^{0}xcost^{2}dt)\)</p><h4 id="解法："><a href="#解法：" class="headerlink" title="解法："></a>解法：</h4><p>将原题目变换为\(\frac{d(\int_{x^{2}}^{0}xcost^{2}dt)}{dx}\),从这可以看出，这是一个函数的导数形式，在这个关于t的函数中，x是常数项，可以提取出来，也就是\(\frac{d(x\int_{x^{2}}^{0}cost^{2}dt)}{dx}\)<br>那么，我们设一个函数\(y(t)\),\(y^\prime(t)=cost^{2}\),那么，\(\int_{x^{2}}^{0}cost^{2}dt=y(0)-y(x^{2})\)<br>因此，原函数就可以变形成\(y(0)-y(x^{2})-2xy^\prime(x^{2})\),即为\(\int_{x^{2}}^{0}cost^{2}dt-2x^{2}cosx^{4}\)</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h4&gt;&lt;p&gt;\(\frac{d}{dx}(\int_{x^{2}}^{0}xcost^{2}dt)\)&lt;/p&gt;
+&lt;h4 id=&quot;解法：&quot;&gt;&lt;a 
+      
+    
+    </summary>
+    
+    
+      <category term="数学" scheme="https://flyingheartcn.github.io/tags/%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你好世界</title>
+    <link href="https://flyingheartcn.github.io/2017/11/23/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/"/>
+    <id>https://flyingheartcn.github.io/2017/11/23/你好世界/</id>
+    <published>2017-11-23T08:17:02.000Z</published>
+    <updated>2017-11-24T08:51:42.544Z</updated>
+    
+    <content type="html"><![CDATA[<p>你好世界</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;你好世界&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://flyingheartcn.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
