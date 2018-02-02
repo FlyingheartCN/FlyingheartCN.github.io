@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://blog.shigure.moe">
-  <title>一道一元函数微分题(二) | 飞翔的心</title>
+  <title>Rails学习记录1 | 飞翔的心</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目：设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime\prime}[f^{-1}(x)]\)都存在，且\(f^{-1}[f^{-1}(x)]\neq 0\)证明\(\frac{d^{2}f^{-1}(x)}{dx^{2}}=-\fra">
-<meta name="keywords" content="数学,微积分">
+  <meta name="description" content="安装：我的电脑是Windows系统，所以为了方便我在VMware中安装了虚拟机，系统是CentOS7，保持最新 安装rvm：123456gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3cur">
+<meta name="keywords" content="Ruby,Rails,编程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一道一元函数微分题(二)">
-<meta property="og:url" content="https://blog.shigure.moe/2017/12/03/一道一元函数微分题(二)/index.html">
+<meta property="og:title" content="Rails学习记录1">
+<meta property="og:url" content="https://blog.shigure.moe/2018/02/02/Rails学习记录1/index.html">
 <meta property="og:site_name" content="飞翔的心">
-<meta property="og:description" content="题目：设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime\prime}[f^{-1}(x)]\)都存在，且\(f^{-1}[f^{-1}(x)]\neq 0\)证明\(\frac{d^{2}f^{-1}(x)}{dx^{2}}=-\frac{f^{\prime\prime}[f^{-1}(x)]}{\left \{">
-<meta property="og:updated_time" content="2017-12-05T06:10:40.000Z">
+<meta property="og:description" content="安装：我的电脑是Windows系统，所以为了方便我在VMware中安装了虚拟机，系统是CentOS7，保持最新 安装rvm：123456gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3curl -L https://raw.githubusercontent.com/">
+<meta property="og:updated_time" content="2018-02-02T11:02:34.058Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一道一元函数微分题(二)">
-<meta name="twitter:description" content="题目：设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime\prime}[f^{-1}(x)]\)都存在，且\(f^{-1}[f^{-1}(x)]\neq 0\)证明\(\frac{d^{2}f^{-1}(x)}{dx^{2}}=-\frac{f^{\prime\prime}[f^{-1}(x)]}{\left \{">
+<meta name="twitter:title" content="Rails学习记录1">
+<meta name="twitter:description" content="安装：我的电脑是Windows系统，所以为了方便我在VMware中安装了虚拟机，系统是CentOS7，保持最新 安装rvm：123456gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3curl -L https://raw.githubusercontent.com/">
   
     <link rel="alternative" href="/atom.xml" title="飞翔的心" type="application/atom+xml">
   
@@ -178,62 +178,38 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-一道一元函数微分题(二)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Rails学习记录1" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      一道一元函数微分题(二)
+      Rails学习记录1
     </h1>
   
 
         
-        <a href="/2017/12/03/一道一元函数微分题(二)/" class="archive-article-date">
-  	<time datetime="2017-12-03T06:52:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-03</time>
+        <a href="/2018/02/02/Rails学习记录1/" class="archive-article-date">
+  	<time datetime="2018-02-02T10:40:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-02</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h4><p>设函数\(f(y)\)的反函数\(f^{-1}(x)\)及\(f^{\prime}[f^{-1}(x)]\)与\(f^{\prime\prime}[f^{-1}(x)]\)都存在，且\(f^{-1}[f^{-1}(x)]\neq 0\)<br>证明\(\frac{d^{2}f^{-1}(x)}{dx^{2}}=-\frac{f^{\prime\prime}[f^{-1}(x)]}{\left \{ f^{\prime}[f^{-1(x)}] \right \}^{3}}\)<br><a id="more"></a></p>
-<h4 id="解答："><a href="#解答：" class="headerlink" title="解答："></a>解答：</h4><p>【证】设\(x=f(y)\)，则其反函数位\(y=f^{-1}(x)\)，对\(x=f(y)\)两边关于\(x\)求导，得\(1=f^{\prime}(y)\frac{dy}{dx}\)，变形得\(\frac{dy}{dx}=\frac{1}{f^{\prime}(y)}\)，再对两边求导，得\(\frac{d^{2}y}{dx^{2}}=-\frac{f^{\prime\prime}}{[f^{\prime}(y)]^2}\times \frac{dy}{dx}=-\frac{f^{\prime\prime}(y)}{[f^{\prime}(y)]^{3}}\)<br>将\(y=f^{-1}(x)\)替换入，证毕</p>
+        <a id="more"></a>
+<h3 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h3><p>我的电脑是Windows系统，所以为了方便我在VMware中安装了虚拟机，系统是CentOS7，保持最新</p>
+<p>安装rvm：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3</span><br><span class="line">curl -L https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer | bash -s stable</span><br><span class="line">source /etc/profile.d/rvm.sh</span><br><span class="line">mkdir .rvm</span><br><span class="line">mkdir .rvm/user</span><br><span class="line">echo &quot;ruby_url=https://cache.ruby-china.org/pub/ruby&quot; &gt; ~/.rvm/user/db</span><br></pre></td></tr></table></figure></p>
+<p>结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# rvm -v</span><br><span class="line">rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]</span><br></pre></td></tr></table></figure></p>
+<p>安装ruby 2.5.0：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rvm requirements</span><br><span class="line">rvm install 2.5.0</span><br><span class="line">rvm use 2.5.0 --default</span><br></pre></td></tr></table></figure></p>
+<p>结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# ruby -v</span><br><span class="line">ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-linux]</span><br><span class="line">[root@localhost ~]# gem -v</span><br><span class="line">2.7.3</span><br></pre></td></tr></table></figure></p>
+<p>安装rails：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/</span><br><span class="line">gem install bundler</span><br><span class="line">gem install rails</span><br></pre></td></tr></table></figure></p>
+<p>结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]# rails -v</span><br><span class="line">Rails 5.1.4</span><br></pre></td></tr></table></figure></p>
+<p>好了，安装已经完成了，可以说安装的步骤很简单<del>比Gitlab不知道简单到哪里去了</del></p>
 
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>请我喝杯酒？<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/weixin.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -244,11 +220,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Ruby</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微积分</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Rails</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
         		</li>
       		
 		</ul>
@@ -304,7 +284,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://blog.shigure.moe/2017/12/03/一道一元函数微分题(二)/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://blog.shigure.moe/2018/02/02/Rails学习记录1/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -318,18 +298,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/04/玉屏风口服液中黄芪甲苷的定性、定量分析实验/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          玉屏风口服液中黄芪甲苷的定性、定量分析实验
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/02/一道一元函数微分题/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">一道一元函数微分题</div>
+    <a href="/2018/02/01/有人喜欢彩虹六号嘛/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">有人喜欢彩虹六号嘛</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -368,7 +339,7 @@
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "https://blog.shigure.moe/2017/12/03/一道一元函数微分题(二)/",
+  id: "https://blog.shigure.moe/2018/02/02/Rails学习记录1/",
   owner: 'FlyingheartCN',
   repo: 'FlyingheartCN.github.io',
   oauth: {
