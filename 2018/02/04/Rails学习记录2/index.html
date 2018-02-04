@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://blog.shigure.moe">
-  <title>Archives: 2017 | 飞翔的心</title>
+  <title>Rails学习记录2 | 飞翔的心</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="飞翔的心">
-<meta property="og:url" content="https://blog.shigure.moe/archives/2017/index.html">
+  <meta name="description" content="###编辑器配置：在Windows上写代码，通过sftp同步到Linux上，Linux上运行rails console，通过ssh进行调试编辑器为VSCode，安装扩展ftp-sync、Ruby、Ruby on Rails、Simple Ruby ERBftp-sync.json配置如下1234567891011121">
+<meta name="keywords" content="Ruby,Rails,编程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rails学习记录2">
+<meta property="og:url" content="https://blog.shigure.moe/2018/02/04/Rails学习记录2/index.html">
 <meta property="og:site_name" content="飞翔的心">
+<meta property="og:description" content="###编辑器配置：在Windows上写代码，通过sftp同步到Linux上，Linux上运行rails console，通过ssh进行调试编辑器为VSCode，安装扩展ftp-sync、Ruby、Ruby on Rails、Simple Ruby ERBftp-sync.json配置如下12345678910111213141516171819202122&amp;#123;    &amp;quot;remot">
+<meta property="og:updated_time" content="2018-02-04T03:00:25.936Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="飞翔的心">
+<meta name="twitter:title" content="Rails学习记录2">
+<meta name="twitter:description" content="###编辑器配置：在Windows上写代码，通过sftp同步到Linux上，Linux上运行rails console，通过ssh进行调试编辑器为VSCode，安装扩展ftp-sync、Ruby、Ruby on Rails、Simple Ruby ERBftp-sync.json配置如下12345678910111213141516171819202122&amp;#123;    &amp;quot;remot">
   
     <link rel="alternative" href="/atom.xml" title="飞翔的心" type="application/atom+xml">
   
@@ -173,278 +178,172 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Rails学习记录2" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Rails学习记录2
+    </h1>
+  
+
+        
+        <a href="/2018/02/04/Rails学习记录2/" class="archive-article-date">
+  	<time datetime="2018-02-04T02:53:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-04</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###编辑器配置：<br>在Windows上写代码，通过sftp同步到Linux上，Linux上运行rails console，通过ssh进行调试<br>编辑器为VSCode，安装扩展ftp-sync、Ruby、Ruby on Rails、Simple Ruby ERB<br>ftp-sync.json配置如下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;remotePath&quot;: &quot;/home/ruby/rails/blog&quot;,</span><br><span class="line">    &quot;host&quot;: &quot;10.0.0.12&quot;,</span><br><span class="line">    &quot;username&quot;: &quot;username&quot;,</span><br><span class="line">    &quot;password&quot;: &quot;password&quot;,</span><br><span class="line">    &quot;port&quot;: 22,</span><br><span class="line">    &quot;protocol&quot;: &quot;sftp&quot;,</span><br><span class="line">    &quot;uploadOnSave&quot;: true,</span><br><span class="line">    &quot;passive&quot;: false,</span><br><span class="line">    &quot;debug&quot;: false,</span><br><span class="line">    &quot;privateKeyPath&quot;: null,</span><br><span class="line">    &quot;passphrase&quot;: null,</span><br><span class="line">    &quot;ignore&quot;: [</span><br><span class="line">        &quot;\\.vscode&quot;,</span><br><span class="line">        &quot;\\.DS_Store&quot;</span><br><span class="line">    ],</span><br><span class="line">    &quot;generatedFiles&quot;: &#123;</span><br><span class="line">        &quot;uploadOnSave&quot;: false,</span><br><span class="line">        &quot;extensionsToInclude&quot;: [],</span><br><span class="line">        &quot;path&quot;: &quot;&quot;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在Windows上安装openssh、git，并且把bin加入PATH中，连接服务器的时候，命令为<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -L 3000:10.0.0.12:3000 ruby@10.0.0.12</span><br></pre></td></tr></table></figure></p>
+<p>这样就把虚拟机的3000端口映射到本地了，我的VMWare不知为何不能直接访问3000端口，所以只能这样解决<br>rails console则和Linux上开发没有区别</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/19/剁手物品/" class="archive-article-date">
-  	<time datetime="2017-12-19T13:24:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/19/剁手物品/">剁手物品</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Ruby</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日常</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Rails</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">剁手</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编程</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://blog.shigure.moe/2018/02/04/Rails学习记录2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/04/一道一元函数微分题(三)/" class="archive-article-date">
-  	<time datetime="2017-12-04T13:00:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-04</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/02/Rails学习记录1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Rails学习记录1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/04/一道一元函数微分题(三)/">一道一元函数微分题(三)</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微积分</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/04/玉屏风口服液中黄芪甲苷的定性、定量分析实验/" class="archive-article-date">
-  	<time datetime="2017-12-04T08:20:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-04</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/04/玉屏风口服液中黄芪甲苷的定性、定量分析实验/">玉屏风口服液中黄芪甲苷的定性、定量分析实验</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">化学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">中药</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">分析化学</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/03/一道一元函数微分题(二)/" class="archive-article-date">
-  	<time datetime="2017-12-03T06:52:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/03/一道一元函数微分题(二)/">一道一元函数微分题(二)</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微积分</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/12/02/一道一元函数微分题/" class="archive-article-date">
-  	<time datetime="2017-12-02T13:51:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-02</time>
-</a>
-        </div>
-    	 
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "https://blog.shigure.moe/2018/02/04/Rails学习记录2/",
+  owner: 'FlyingheartCN',
+  repo: 'FlyingheartCN.github.io',
+  oauth: {
+    client_id: '213d2f12f52370d6a789',
+    client_secret: '3f3ddc235b407d1a26b1292d47581c19027d931c',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/02/一道一元函数微分题/">一道一元函数微分题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">数学</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">微积分</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/23/你好世界/" class="archive-article-date">
-  	<time datetime="2017-11-23T08:17:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/23/你好世界/">你好世界</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -467,8 +366,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
