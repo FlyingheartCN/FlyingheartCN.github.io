@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.shigure.moe/"/>
-  <updated>2018-02-04T03:07:45.439Z</updated>
+  <updated>2018-05-19T14:51:48.507Z</updated>
   <id>https://blog.shigure.moe/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用GPG加密你的电子邮件</title>
+    <link href="https://blog.shigure.moe/2018/05/19/%E4%BD%BF%E7%94%A8GPG%E5%8A%A0%E5%AF%86%E4%BD%A0%E7%9A%84%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6/"/>
+    <id>https://blog.shigure.moe/2018/05/19/使用GPG加密你的电子邮件/</id>
+    <published>2018-05-19T14:45:17.000Z</published>
+    <updated>2018-05-19T14:51:48.507Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先，你需要先安装GPG和Thunderbird电子邮件客户端<br><a id="more"></a><br>首先，在Thunderbird上安装Enigmail扩展<br>安装好之后，打开Enigmail的选项，把gpg的目录设置到(Windows下，Linux下应该可以自动探测)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files (x86)\GnuPG\bin\gpg.exe</span><br></pre></td></tr></table></figure></p><p>打开kleopatra，生成一个你的密钥对，把公钥上传到服务器上，例如<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pgp.mit.edu</span><br><span class="line">keyserver.ubuntu.com</span><br></pre></td></tr></table></figure></p><p>用你的私钥给别人的公钥认证后，给此人发送邮件的时候选上它，并用自己的私钥签名即可</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;首先，你需要先安装GPG和Thunderbird电子邮件客户端&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Rails学习记录2</title>
